@@ -1,0 +1,173 @@
+baseURL: "https://sherlock-xpf.github.io"
+title: XuFei Blogs
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  # minifyOutput: true.
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: XuFei Blogs
+  description: "my person blog"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: "img/c01.png"
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: true
+  ShowAllPagesInArchive: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  permalinks: #浏览器链接显示方式
+    post: "/:title/"
+    # post: "/:year/:month/:day/:title/"
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "XuFei"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: XuFei Blogs
+    subtitle: "This is subtitle"
+    imageUrl: "img/c01.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Home
+        url: /    
+      - name: bigdata
+        url: posts/bigdata    
+      - name: AIGC
+        url: posts/AIGC
+      - name: Projects
+        url: posts/Projects
+        
+
+  # home-info mode
+  homeInfoParams:
+    Title: "About 🙋🏻‍♂️"
+    Content: Hey I'm Xu Fei, a bigdata engineer and aigc enthusiast. I‘m now living a digital nomad, a global sojourn living in different places to experience local cultural life, and experience the freedom and joy of life. Currently in Dali, Yunnan Province.In my spare time, I like to travel, take pictures, and write blogs. I hope to record my life and share my experience with you.
+
+
+  
+            
+  socialIcons: 
+    - name: email
+      url: "https://mail.google.com/mail/u/0/#inbox" 
+    - name: twitter
+      url: "https://twitter.com/pfx95"
+    - name: instagram
+      url: "https://www.instagram.com/fishbonepf/"
+    - name: github
+      url: "https://github.com/Sherlock-Xpf"
+    - name: strava
+      url: "https://www.strava.com/athletes/73488688"
+    - name: douban
+      url: "https://www.douban.com/people/196938541/"
+    - name: youtube
+      url: "https://www.youtube.com/channel/UC4QXjXUQZQX9yQ3qXqQ1Y0Q"
+    - name: jike
+      url: "https://m.okjike.com/users/5f9e4e8b9e8a6d0011b3b8a4"
+
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/sherlock-xpf.github.io/content"
+    Text: "just do it!" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  ## https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: Posts
+      name: Blogs
+      url: posts
+      weight: 1
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 2
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 3
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 4
+    - identifier: Wiki
+      name: Wiki
+      url: /Wiki/
+      weight: 5
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
