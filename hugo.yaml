@@ -86,11 +86,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "About 🙋🏻‍♂️"
-    Content: Hey I'm Xu Fei, a bigdata engineer and aigc enthusiast. I‘m now living a digital nomad, a global sojourn living in different places to experience local cultural life, and experience the freedom and joy of life. Currently in Dali, Yunnan Province.In my spare time, I like to travel, take pictures, and write blogs. I hope to record my life and share my experience with you.
-
-
-  
-            
+    Content: Hey I'm Xu Fei, a bigdata engineer and aigc enthusiast.You can follow my **[Strava](https://www.strava.com/athletes/94054931)** I‘m now living a digital nomad, a global sojourn living in different places to experience local cultural life, and experience the freedom and joy of life. Currently in Dali, Yunnan Province.In my spare time, I like to travel, take pictures, and write blogs. I hope to record my life and share my experience with you.This is my personal blog, which records my life, work and learning. If you have any questions, please contact me. I will reply as soon as possible.
   socialIcons: 
     - name: email
       url: "https://mail.google.com/mail/u/0/#inbox" 
