@@ -152,10 +152,6 @@ menu:
       name: Archives
       url: /archives/
       weight: 4
-    - identifier: Wiki
-      name: Wiki
-      url: /Wiki/
-      weight: 5
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
